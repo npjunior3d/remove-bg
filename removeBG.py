@@ -9,7 +9,7 @@ def remove_bg(imagem, widget):
     widget.image(sem_fundo)
 
 st.title('Remove fundo de imagens!')
-imagem = st.file_uploader('Escolha uma imagem')
+imagem = st.file_uploader('Prof. Ricardo Roson - Colégio Litteratus')
 
 col_a, col_b = st.columns(2)
 
