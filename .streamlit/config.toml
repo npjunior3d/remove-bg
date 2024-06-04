@@ -1,1 +1,6 @@
+[server]
+#headless = true (Não abre aba navegador)
+#port = 9090
 
+[theme]
+base = 'light'
