@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "removebg"
+version = "0.1.0"
+description = ""
+authors = ["Ricardo Roson <rroson@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+streamlit = "^1.37.1"
+pillow = "^10.4.0"
+rembg = "^2.0.58"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
