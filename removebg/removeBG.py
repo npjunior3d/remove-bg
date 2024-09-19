@@ -11,10 +11,11 @@ from time import sleep
 
 def remove_bg(imagem, widget):
     try:
-        img = Image.open(imagem)
-        sem_fundo = remove(img)
-        widget.title('Sem fundo!')
-        widget.image(sem_fundo)
+        with st.spinner('Removendo Fundo da Imagem, Agurade...'):
+            img = Image.open(imagem)
+            sem_fundo = remove(img)
+            widget.title('Sem fundo!')
+            widget.image(sem_fundo)
     except UnidentifiedImageError:
         st.error('Imagem não suportada! Tente outra!', icon="🚨")
         sleep(2)
